@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Портфоліо</title>
+  </head>
+
+  <body>
+    <!--header-->
+         <header class="header">
+      <div class="header-content">
+        <nav class="site-nav">
+          <div class="site-nav__logo">
+            <a href="./index.html" class="site-nav__logo-type-1"><span class="site-nav__logo-type-2">Web</span>Studio</a>
+          </div>
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Studio</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link current">Portfolio</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="site-contacts">
+          <li class="site-contacts__item">
+            <a href="mailto:info@devstudio.com" class="site-contacts__link">
+              <!-- <svg class="icon" width="16px" height="12px">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-mail"></use>
+              </svg> -->
+              info@devstudio.com</a>
+          </li>
+          <li class="site-contacts__item">
+            <a href="+11 (000) 111-11-11" class="site-contacts__link">
+              <!-- <svg class="icon" width="10px" height="16px">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
+              </svg> -->
+              +38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+
+      <button type="button" class="site-nav__main-container__button" aria-expanded="false" aria-controls="site-nav__main-container__button" data-menu-open >
+                <svg width="24px" height="16px" aria-label="перемикач кнопки меню">
+                  <use class="icon-cross" href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
+                  <use class="icon-menu" href="./images/icons.svg/symbol-defs.svg#icon-menu-container"></use>
+                </svg>
+              </button>
+          <div class="site-nav__main-container" data-menu>
+
+            <button type="button" class="site-nav__main-container__button" data-menu-close >
+                <svg width="24px" height="16px">
+                    <use class="mobile-menu-btn__icon" href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+
+            <div class="mobile-header-container">
+              <div class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link">Студія</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="mobile-nav__link current">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="./contacts.html" class="mobile-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+          <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contacts__link current">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contacts__link">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-links__list">
+          <li class="mobile-links__item">
+            <a class="mobile-links__link" href="#">Instagram</a>
+          </li>
+          <li class="mobile-links__item">
+            <a class="mobile-links__link" href="#">Twitter</a>
+          </li>
+          <li class="mobile-links__item">
+            <a class="mobile-links__link" href="#">Facebook</a>
+          </li>
+          <li class="mobile-links__item">
+            <a class="mobile-links__link" href="#">LinkenIn</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main-portfolio">
+      <section class="portfolio-section">
+        <div class="portfolio">
+          <h1 class="portfolio__header visually-hidden">Портфоліо</h1>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button">
+                Усі
+              </button>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button">
+                Веб-сайти
+              </button>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button">
+                Додатки
+              </button>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button">
+                Дизайн
+              </button>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="project__list">
+            <li class="project__item">
+              <a href="" class="project__link"
+                ><div class="project__link__hover">
+                  <img
+                    src="./images/portfolio/project-01-desktop@1x.jpg"
+                    width="368"
+                    alt="Фото Веб-сайта Технокряка"
+                  />
+                  <div class="project__link__active">
+                    <p class="project__link__active-text">
+                      14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                    </p>
+                  </div>
+                </div>
+                <div class="project__text-padding">
+                  <h2 class="project__name">Banking App Interface Concept</h2>
+                  <p class="project__description">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link">
+                <div class="project__link__hover">
+                  <img
+                    src="./images/portfolio/project-02-desktop@1x.jpg"
+                    width="368"
+                    alt="Фото постера New Orlean vs Golden Star"
+                  />
+                  <div class="project__link__active">
+                    <p class="project__link__active-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                </div>
+                <div class="project__text-padding">
+                  <h2 class="project__name">
+                    Cashless Payment
+                  </h2>
+                  <p class="project__description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link">
+                <div class="project__link__hover">
+                  <img
+                    src="./images/portfolio/project-03-desktop@1x.jpg"
+                    width="368"
+                    alt="Логотип ресторану Seafood"
+                  />
+                  <div class="project__link__active">
+                    <p class="project__link__active-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                </div>
+                <div class="project__text-padding">
+                  <h2 class="project__name">Meditaion</h2>
+                  <p class="project__description">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link"
+                ><div class="project__link__hover">
+                  <img
+                    src="./images/portfolio/project-04-desktop@1x.jpg"
+                    width="368"
+                    alt="Фото навушників"
+                  />
+                  <div class="project__link__active">
+                    <p class="project__link__active-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                </div>
+                <div class="project__text-padding">
+                  <h2 class="project__name">Taxi Service</h2>
+                  <p class="project__description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link">
+                <div class="project__link__hover">
+                  <img
+                    src="./images/portfolio/project-05-desktop@1x.jpg"
+                    width="368"
+                    alt="Фото двох коробок"
+                  />
+                  <div class="project__link__active">
+                    <p class="project__link__active-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                </div>
+                <div class="project__text-padding">
+                  <h2 class="project__name">
+                    Screen Illustrations
+                  </h2>
+                  <p class="project__description">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link">
+                <div class="project__link__hover">
+                  <img
+                    src="./images/portfolio/project-06-desktop@1x.jpg"
+                    width="368"
+                    alt="Фото головної сторінки Веб-сайта Inspiration has no Borders"
+                  />
+                  <div class="project__link__active">
+                    <p class="project__link__active-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                </div>
+                <div class="project__text-padding">
+                  <h2 class="project__name">
+                    Online Courses
+                  </h2>
+                  <p class="project__description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link">
+                <div class="project__link__hover">
+                  <img
+                    src="./images/portfolio/project-07-desktop@1x.jpg"
+                    width="368"
+                    alt="Фото журналу Видання Limited Edition"
+                  />
+                  <div class="project__link__active">
+                    <p class="project__link__active-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                </div>
+                <div class="project__text-padding">
+                  <h2 class="project__name">
+                    Instagram Stories Concept
+                  </h2>
+                  <p class="project__description">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link">
+                <div class="project__link__hover">
+                  <img
+                    src="./images/portfolio/project-08-desktop@1x.jpg"
+                    width="368"
+                    alt="Фото бірки Проєкта LAB"
+                  />
+                  <div class="project__link__active">
+                    <p class="project__link__active-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                </div>
+                <div class="project__text-padding">
+                  <h2 class="project__name">
+                    Organic Food
+                  </h2>
+                  <p class="project__description">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="" class="project__link">
+                <div class="project__link__hover">
+                  <img
+                    src="./images/portfolio/project-09-desktop@1x.jpg"
+                    width="368"
+                    alt="Фото головної сторінки додатку Growing Business"
+                  />
+                  <div class="project__link__active">
+                    <p class="project__link__active-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  </div>
+                </div>
+                <div class="project__text-padding">
+                  <h2 class="project__name">
+                    Fresh Coffee
+                  </h2>
+                  <p class="project__description">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <div class="footer">
+        <div class="tablet-footer-container">
+        <div class="footer-first">
+          <a href="./index.html" class="footer-first__logo-1"
+            ><span class="footer-first__logo-2">Web</span>Studio</a
+          >
+          <p class="footer-first__text">Increase the flow of customers and
+            <br> sales for your business with digital
+            <br> marketing & growth solutions.</p>
+        </div>
+        <div class="footer-second">
+          <h2 class="footer-second__join">Social media</h2>
+          <ul class="footer-second__list">
+            <li class="footer-second__list__item">
+              <a href="#" class="footer-second__link" target="_blank">
+                <svg class="icon" width="20px" height="20px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-second__list__item">
+              <a href="#" class="footer-second__link" target="_blank">
+                <svg class="icon" width="20px" height="20px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-second__list__item">
+              <a href="#" class="footer-second__link" target="_blank">
+                <svg class="icon" width="20px" height="20px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-second__list__item">
+              <a href="#" class="footer-second__link" target="_blank">
+                <svg class="icon" width="20px" height="20px">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <div class="footer-third">
+          <p class="footer-third__header">Subscribe</p>
+          <form class="footer-third__form">
+            <input
+              type="email"
+              class="footer-third__form__input"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="footer-third__form__button" type="submit">
+              Subscribe
+              <svg class="icon" width="24px" height="24px">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-telegram"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+.our-team-section {
+    background-color: var(--secondary-bg-color);
+    padding: 94px 0px;
+}
+
+.our-team {
+        
+    &__header {
+        @media screen and (max-width: 1199px) {
+                font-size: 28px;
+                line-height: 1.178;
+            }
+        
+            @media screen and (min-width: 1200px) {
+              font-size: 36px;
+              line-height: 1.166;
+            }
+            
+            margin-bottom: 50px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            white-space: nowrap;
+            color: var(--primary-text-color);
+        }
+
+        &__list {
+            display: flex;
+
+            @media screen and (max-width: 1199px){
+                flex-wrap: wrap;
+            }
+
+            @media screen and (min-width: 1200px) {
+                display: flex;
+                justify-content: center;
+            }
+
+                &__element-main {
+                    
+                    &:not(:last-child){
+                        @media screen and (max-width: 767px) {
+                        
+                                margin-bottom: 30px;
+                            }
+                    }
+                    
+                        @media screen and (min-width: 768px) {
+                            flex-basis: calc((100% - 30px * 2) / 2);
+                                margin: 15px;
+                        }
+                    
+                        @media screen and (min-width: 1200px) {
+                            flex-basis: calc((100% - 30px * 4) / 4)
+                        }
+
+                        box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+                        border-radius: 0px 0px 4px 4px;
+                        background-color: var(--primary-white-color);
+
+
+
+                        .teammate-photo {
+                            
+                        }
+                    }
+        }
+
+        &__work {
+
+            &-main {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.187;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: var(--primary-text-color);
+                }
+
+                &-additional {
+                        margin-top: 10px;
+                        margin-bottom: 16px;
+                        font-size: 16px;
+                        line-height: 1.187;
+                        text-align: center;
+                        letter-spacing: 0.03em;
+                        color: var(--secondary-text-color);
+                }
+        }
+
+                &__text-padding {
+                    padding: 30px 0px;
+                }
+
+                &__link {
+                        height: 44px;
+                        width: 44px;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background-color: var(--accent-secondary-color);
+                        fill: var(--icon-second-color);
+        
+                        //transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                            //fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+                    &:hover,
+                    &:focus {
+                        //background-color: var(--hover-icon);
+                    }
+        
+                    &:hover,
+                    &:focus {
+                        //fill: var(--primary-white-color);
+                    }
+                }
+
+        &__list-for-icons {
+            display: flex;
+            justify-content: center;
+
+            &__item:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+
+        &__link:hover .team-icon,
+        &__link:focus .team-icon {
+                    fill: var(--primary-white-color);
+        }
+
+        @extend .container
+        
+}
