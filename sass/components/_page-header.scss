@@ -1,6 +1,8 @@
 .header {
-    border-bottom: 1px solid #ECECEC;
     position: relative;
+
+    border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-content {
   
@@ -60,10 +62,10 @@
 
  &__main-container__button {
         position: absolute;
-        width: 40px;
-        height: 40px;
-        top: 10px;
-        right: 15px;
+        width: 24px;
+        height: 24px;d
+        top: 40px;
+        right: 40px;
         border: none;
         background-color: #fff;
         cursor: pointer;
@@ -91,6 +93,12 @@
 
       @media screen and (min-width: 768px) {
        
+      }
+
+      .site-nav__main-container.is-open & {
+        background: #E7E9FC;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 50%;
       }
   }
 
@@ -246,6 +254,11 @@
           font-size: 12px;
           line-height: 1.333;
         }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          padding: 0;
+        }
+
         @media screen and (min-width: 1200px) {
             font-size: 16px;
             line-height: 1.5;

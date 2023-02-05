@@ -147,7 +147,7 @@
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .form__label:focus-within>& {
-            border-color: var(--accent-color);
+            border-color: var(--accent-secondary-color);
             transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 }
@@ -255,8 +255,8 @@
                 }
                 
                     @media screen and (min-width: 1200px) {
-                        font-size: 14px;
-                        line-height: 1.714;
+                        font-size: 12px;
+                        line-height: 1.33;
                     }
             }
 

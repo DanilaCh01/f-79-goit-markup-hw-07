@@ -79,13 +79,41 @@ body {
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1147px;
+        width: 1200px;
     }
 
 }
 
+.special-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (min-width: 480px) {
+        width: 426px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 582px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+
+}
+
+// .special-container-768 {
+//     width: 768px;
+//     margin-right: auto;
+//     margin-left: auto;
+//     padding: 0px 15px;
+// }
+
 section {
     display: block;
+    padding: 120px 0px;
 }
 
 .icon {
