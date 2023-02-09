@@ -163,7 +163,7 @@
 
   &__logo-type-1 {
       font-family: 'Raleway', sans-serif;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 18px;
       line-height: 1.333;
       text-decoration: none;
@@ -259,10 +259,10 @@
         text-decoration: none;
         color: var(--header-address);
         
-        @media screen and (max-width: 768px) {
-          font-size: 12px;
-          line-height: 1.333;
-        }
+        // @media screen and (max-width: 768px) {
+        //   font-size: 12px;
+        //   line-height: 1.333;
+        // }
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
           padding: 0;

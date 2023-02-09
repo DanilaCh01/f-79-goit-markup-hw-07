@@ -113,7 +113,15 @@ body {
 
 section {
     display: block;
-    padding: 120px 0px;
+
+    @media screen and (max-width: 1199px){
+        padding: 96px 0px;
+    }
+
+    @media screen and (min-width: 1200px){
+        padding: 120px 0px;
+    }
+
 }
 
 .icon {

@@ -3,39 +3,34 @@
 }
 
 .clients {
-    &__header {
-        @media screen and (max-width: 1199px) {
-                font-size: 28px;
-                line-height: 1.178;
-            }
-        
-            @media screen and (min-width: 1200px) {
-                font-size: 36px;
-                line-height: 1.166;
-            }
-            
+    &__header {  
             font-family: 'Roboto';
             text-align: center;
-            letter-spacing: 0.03em;
+            font-size: 36px;
+            line-height: 1.111;
+            letter-spacing: 0.02em;
     
-            margin-bottom: 50px;
+            margin-bottom: 72px;
     
             color: var(--primary-text-color);
         }
 
         &__list {
-            @media screen and (max-width: 767px) {
-                display: flex;
-                flex-wrap: wrap;
+
+            display: flex;
+
+            @media screen and (max-width: 479px) {
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
             }
 
-            @media screen and (max-width: 1199px) {
-                display: flex;
+            @media screen and (min-width: 480px) and (max-width: 1199px) {
                 flex-wrap: wrap;
             }
 
             @media screen and (min-width: 1200px) {
-                display: flex;
                 justify-content: center;
                 align-items: center;
             }
@@ -62,7 +57,12 @@
         width: 168px;
         height: 88px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 479px) {
+        width: calc(100% - 125px);
+        margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
         width: 190px;
         &:nth-of-type(1n) {
             margin-right: 16px;
