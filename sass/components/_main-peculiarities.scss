@@ -9,6 +9,11 @@
     }
         &__list {
             display: flex;
+
+            @media screen and (max-width: 767px) {
+                justify-content: center;
+            }
+
             @media screen and (max-width: 1199px) {
                 flex-wrap: wrap;
             }
@@ -19,7 +24,7 @@
             &-element {
 
                 @media screen and (max-width: 767px) {
-                    width: 396px;
+                    //width: 396px;
                     &:not(:last-child) {
                         margin-right: 0;
                         margin-bottom: 72px;
@@ -27,7 +32,7 @@
                 }
 
                 @media screen and (min-width: 768px) and (max-width: 1199px) {
-                    width: 356px;
+                    //width: 356px;
                     &:nth-of-type(1n) {
                         margin-right: 24px;
                         margin-bottom: 72px;
@@ -50,7 +55,7 @@
                 }
 
                 @media screen and (min-width: 1200px) {
-                    width: 264px;
+                    //width: 264px;
                     &:not(:last-child) {
                         margin-right: 24px;
                     }
@@ -101,9 +106,12 @@
 
                     @media screen and (max-width: 767px) {
                         text-align: center;
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 1.111;
                     }
 
-                    @media screen and (max-width: 1199px) {
+                    @media screen and (min-width: 768px) and (max-width: 1199px) {
                         text-align: left;
                         font-weight: 700;
                         font-size: 36px;

@@ -20,6 +20,8 @@
 
 .modal {
     position: relative;
+    
+    max-height: 586px;
     top: 50%;
     left: 50%;
     max-width: 581px;
@@ -30,22 +32,27 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow-y: auto;
-@media screen and (max-width: 1199px) {
+    
+    @media screen and (max-width: 479px) {
         width: calc(100% - 30px);
-        //top: 65%;
+        
     }
-    @media screen and (max-width: 767px) {
-        padding: 40px 20px;
-    }
-
+    
     @media screen and (min-width: 480px) {
         width: 440px;
-        //height: 609px;
     }
+
+    @media screen and (max-width: 767px) {
+        padding: 40px 20px;
+        height: 90%;
+    }
+    
     
     @media screen and (min-width: 768px) {
         padding: 40px 25px;
         width: 455px;
+        height: 586px;
+        overflow-y: visible;
         //height: 581px;
     }
 
@@ -241,7 +248,9 @@
 
 
 .policy-box {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -283,7 +292,7 @@
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translate(-24px, -50%);
+    transform: translate(-20px, -50%);
     width: 16px;
     height: 15px;
     background-color: transparent;
@@ -291,7 +300,7 @@
     border-radius: 4px;
 
     @media screen and (max-width: 373px) {
-        transform: translate(-24px, -90%);
+        transform: translate(-20px, -100%);
     }
 }
 
